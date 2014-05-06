@@ -22,11 +22,9 @@ if (n > 0):
       start=time.time()                        #Comienza el cronómetro interno¡¡
       probabilidad=modulo.calcular_geo (n,p)
       finish=time.time()-start                 #Finaliza¡¡
-   #********************************   
-   t1=timeit.Timer("modulo.calcular_geo (n,p)",setup="from__main__import mod_geo; n=%d; p=%d" % (n,p))   # Mirar esto Mañana
-    print t1.timeit(10)  # Mirar esto Mañana
-   #********************************
-    
+      
+   t1=timeit.Timer("modulo.calcular_geo (n,p),setup="from__main__import modulo; n=%d; p=%d" % (n,p))
+   
       print "La probabilidad P[X= %d] con p= %f es: %f"  %(n,p,probabilidad)
     elif (respuesta==1):
       start=time.time()                        #Comienza el cronómetro interno¡¡
