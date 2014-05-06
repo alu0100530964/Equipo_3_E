@@ -42,6 +42,8 @@ En otro de los apartados se nos pide calcular la probabilidad de que la pareja a
 \end{equation}
 
 
+\newpage
+
 \subsection{Problema 2: Tantos en baloncesto}
 \begin{shaded}
 Un jugador de baloncesto no cesa en su intento de lanzar pelotas a la canasta que se halla situada a 2 metros de altura hasta que consiga introducir una de éstas a través del aro. Si se supone que sus tiros son independientes y que la probabilidad de anotar una canasta es de 0.8,¿ cuál es la probabilidad de que el baloncestista necesite realizar dos tiros?¿ y de que sean tres tiros, cuatro tiros, cinco tiros, etc. hasta deducir la fórmula para n tiros?¿ cuál es la probabilidad de necesitar como mucho cinco tiros?
@@ -79,7 +81,7 @@ Atendiendo a los resultados del apartado anterior nos queda:
 \begin{center}
 {$P[X\leq5]=0.8 + 0.16 + 0.032 + 0.0064 +0.00128 = 0.99968$}
 \end{center}
-
+\newpage
 \subsection{Problema 3: Dados}
 \begin{shaded}
 Se lanza un dado hasta que aparece el número 4. ¿ Cuál es la probabilidad de que el número de lanzamientos sean 3?

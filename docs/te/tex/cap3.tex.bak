@@ -23,7 +23,7 @@ En éste capítulo, se describirán los diversos materiales utilizados en la elabor
     \item  Número de casos: $n$
   \end{itemize}
   \item[Algoritmo: (ver Figura \ref{dflu}).] 
-\begin{figure}[H]
+\begin{figure}[!ht]
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=2.8cm]{images/diafluj.png}\\

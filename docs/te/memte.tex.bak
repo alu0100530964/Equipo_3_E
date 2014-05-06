@@ -14,7 +14,8 @@
 \usepackage{verbatim}
 \usepackage{amsmath} %paraa poder utilizar split
 \usepackage{framed, color} %paradar color a los ejercicios.
-\usepackage{cancel}
+\usepackage{tikz}
+\usepackage{subfig} %para utilizar varias graficasjuntas
 
 \usetikzlibrary{shapes.geometric, arrows}
 %*******************************************************

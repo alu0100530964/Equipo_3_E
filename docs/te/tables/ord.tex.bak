@@ -1,0 +1,10 @@
+
+		\begin{tabular}{|c||c|c|}
+          \hline
+          % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+          Marca Ordenador: & Modelo: & Procesador: \\
+          \hline
+          Acer & aspire 5735Z & 2.0 Ghz \\
+          \hline
+        \end{tabular}
+        \label{marca}
