@@ -1,3 +1,19 @@
+
+###################################################################################
+# Fichero .py
+###################################################################################
+#
+# AUTORES:María Baeza López
+          Juan Jesús Dóniz Labrador
+          Jesús Manuel Rodríguez Falcón
+#
+# FECHA:
+#
+# DESCRIPCION: Este programa realiza el cálculo de la Distribución Geométrica,
+#              dados los parametros de entrada n y p.
+#			   Dando 4 opción al usuario para el cálculo de dicha distribución:
+#              (0=P(X=n), 1=P(X<=n), 2=P(X<n), 3=P(X>=n))
+###################################################################################
 #!/usr/bin/python
 #!encoding: UTF-8
 import sys 
