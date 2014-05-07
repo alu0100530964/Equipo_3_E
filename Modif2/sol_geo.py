@@ -9,7 +9,7 @@
 # FECHA:
 #
 # DESCRIPCION: Este programa realiza el cálculo de la Distribución Geométrica,
-#              dados los parametros de entrada n y p, utilizando el Módulo: 
+#              dados los parametros de entrada n y p, utilizando el Módulo: mod_geo.py
 #			   Dando 4 opción al usuario para el cálculo de dicha distribución:
 #              (0=P(X=n), 1=P(X<=n), 2=P(X<n), 3=P(X>=n))
 ###################################################################################
