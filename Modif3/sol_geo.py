@@ -15,7 +15,6 @@ else:
     n = int (raw_input())
     print "Introduzca el valor p (p>0):"
     p = float(raw_input())
-    nombre_fichero=raw_input("Introduzca el nombre del fichero para almacenar los resultados: ")
 if (n > 0):
   print "¿Que tipo de probabilidad vas a hallar? (0=P(X=n), 1=P(X<=n), 2=P(X<n), 3=P(X>=n))"
   respuesta=int(raw_input())
@@ -41,6 +40,7 @@ if (n > 0):
     prob=modulo.calcular_geo1(n,p)
     probabilidad = 1 - prob
     finish=time.time()-start                 #Finaliza¡¡
+ 
     print "La probabilidad P[X>= %d] con p= %f es: %f y he tardado %f segundos en calcularlo"  %(n,p,probabilidad,finish)
    
 else:
