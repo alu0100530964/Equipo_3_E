@@ -4,22 +4,25 @@
 \usepackage[dvips]{graphicx}
 \usepackage[dvips]{epsfig}
 \usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{alltt}
 \usepackage{templates/algorithm}
 \usepackage{templates/algorithmic}
 \usepackage{templates/multirow}
 \usepackage{tikz}       %Para hacer los diagramas de flujo
-\usetikzlibrary{mindmap,trees}
-\usepackage{verbatim}
+%\usetikzlibrary{mindmap,trees}
+\usepackage{verbatim}%Para poner código y comentarios de varias páginas.
 \usepackage{amsmath} %paraa poder utilizar split
 \usepackage{framed, color} %paradar color a los ejercicios.
-\usepackage{cancel}
+\usepackage{cancel}%para tachar expresiones.
+\usepackage{colortbl} % Para color en las tablas
+\usepackage{fancyvrb} %para que nos muestre las tildes dentro del entorno Verbatin
+
 
 \usetikzlibrary{shapes.geometric, arrows}
 %*******************************************************
-\definecolor{shadecolor}{rgb}{1,0.8,0.3}
-
+\definecolor{shadecolor}{RGB}{122,59,122}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\SONY}{{\sc Sony}}
@@ -206,15 +209,16 @@
 \thispagestyle{empty}
 \begin{appendix}
 
-\chapter{Título del Apéndice 1}
+\chapter{Apéndice 1: }
+
 \label{appendix:1}
 
 \input{tex/apendice1.tex}
 
-\chapter{Título del Apéndice 2}
-\label{appendix:2}
+%\chapter{Título del Apéndice 2}
+%\label{appendix:2}
 
-\input{tex/apendice2.tex}
+%\input{tex/apendice2.tex}
 
 \end{appendix}
 

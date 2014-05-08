@@ -41,6 +41,7 @@ if (n > 0):
     prob=modulo.calcular_geo1(n,p)
     probabilidad = 1 - prob
     finish=time.time()-start                 #Finaliza¡¡
+ 
     print "La probabilidad P[X>= %d] con p= %f es: %f y he tardado %f segundos en calcularlo"  %(n,p,probabilidad,finish)
    
 else:

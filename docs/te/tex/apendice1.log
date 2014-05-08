@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.6)  6 MAY 2014 09:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.6)  7 MAY 2014 08:58
 entering extended mode
-**C:/Users/User/Desktop/tecnicas*Exper/Trabajo*Final/te/tex/cap1.tex
-("C:/Users/User/Desktop/tecnicas Exper/Trabajo Final/te/tex/cap1.tex"
+**C:/Users/User/Desktop/tecnicas*Exper/Trabajo*Final/te/tex/apendice1.tex
+("C:/Users/User/Desktop/tecnicas Exper/Trabajo Final/te/tex/apendice1.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,33 +13,22 @@ german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5   A
-        lo largo de este cuatrimestre en la asignatura de Técnicas Experimen...
-
+! Undefined control sequence.
+l.1 \section
+            {Algoritmo XXX}
 ? 
 ! Emergency stop.
- ...                                              
-                                                  
-l.5   A
-        lo largo de este cuatrimestre en la asignatura de Técnicas Experimen...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+l.1 \section
+            {Algoritmo XXX}
+End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 8 strings out of 493921
- 379 string characters out of 3147285
+ 7 strings out of 493921
+ 271 string characters out of 3147285
  49031 words of memory out of 3000000
  3400 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 5i,0n,4p,320b,14s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 5i,0n,1p,98b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

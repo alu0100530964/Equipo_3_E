@@ -73,7 +73,7 @@ Atendiendo a la primera opción presenta las siguientes características:
 \begin{itemize}
  \item[$\circ$]El proceso consta de un número no definido de pruebas o experimentales separados o separables.El proceso concluirá cuando se obtenga por primera vez el resultado deseado(éxito)
  \item[$\circ$]Cada prueba puede dar dos resultados mutuamente excluyentes: $A$ y $\neg A$(no $A$) \footnote{En teoría de conjuntos también podemos escribirlo como $\overline{A}$ o $\Omega \backslash A$}
- \item[$\circ$]La probabilidad de obtener un resultado $A$ en cada prueba es $p$ y la de obtener un resultado no $A$ es $q$, siendo $p+q=1$. \footnote{Gracias a esta característica podemos saber el valor de $p$(respectivamente $q$)a partir de su , es decir, $q$(respectivamente $p$)}
+ \item[$\circ$]La probabilidad de obtener un resultado $A$ en cada prueba es $p$ y la de obtener un resultado no $A$ es $q$, siendo $p+q=1$. \footnote{Gracias a esta característica podemos saber el valor de $p$(respectivamente $q$)a partir de su homólogo , es decir, $q$(respectivamente $p$)}
  \item[$\circ$]Las probabilidades $p$ y $q$ son constantes en todas las pruebas, por tanto, las pruebas son independientes (Si se trata de un proceso de ''extracción'',este se llevara a cabo con devolución del sujeto extraído)
 \end{itemize}
 \subsection{Función de probabilidad de la distribución geométrica}
@@ -117,7 +117,7 @@ Algunos autores consideran la aleatorización como ''número de pruebas anteriores
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=4.2cm]{images/grafica1.png}
+\includegraphics[width=6cm]{images/grafica1.png}
 \centering
 \caption{Función de probabilidad geométrica con $p= 0.3$}
 \label{imagen}
@@ -136,7 +136,7 @@ de donde: $F(x)=1-q^x$.
  las gráfica análoga a la anterior:
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=4.2cm]{images/grafica2.png}
+\includegraphics[width=6cm]{images/grafica2.png}
 \centering
 \caption{Distribución geométrica con $p= 0.3$}
 \label{imagen1}
@@ -149,7 +149,7 @@ de donde: $F(x)=1-q^x$.
  \item[$\circ$]\bf{La varianza:}$var(X)=var(Y)=\frac{1-p}{p^2}$
  \item[$\circ$]\bf{Las funciones generatrices:}
  \begin{center}
- $G_X(s)=\frac{s\cdot p}{1-s(1-p)}$ \hspace{1cm} \text{o también} \hspace{1cm} $G_Y(s)=\frac{p}{1-s(1-p)}$, $\; \vert s \vert < (1-p)^{-1}$
+ $G_X(s)=\frac{s\cdot p}{1-s(1-p)}$ \hspace{1cm} \text{y} \hspace{1cm} $G_Y(s)=\frac{p}{1-s(1-p)}$, $\; \vert s \vert < (1-p)^{-1}$
  \end{center}
  \item[$\circ$]\textbf{La moda:} es el valor de la variable que tiene asociada mayor probabilidad. Es fácil comprobar (Véase la Figura \ref{imagen}) que:
  \[P(x_i)\leq P(x=1) \forall x_i\]
@@ -170,18 +170,9 @@ de donde: $F(x)=1-q^x$.
  \end{center}
 \end{itemize}
 Siguiendo el ejemplo de las figuras anteriores obtenemos los siguientes resultados:
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
- & Fórmula & Valor para $P=0.3$ \\ \hline
-Media & $E(Y)=\frac{1-p}{p}$ & $1$ \\ \hline
-Varianza & $var(Y)=\frac{1-p}{p^2}$ &$2$ \\ \hline
-Coeficiente de simetría & $G_Y(s)=\frac{p}{1-s(1-p)}$ & $2.1213203435596$ \\ \hline
-\end{tabular}
-\end{center}
-\caption{Propiedades geométricas}
-\label{tabla}
-\end{table}
+
+%------------------------------------------------------------------------------
+\input{tables/datos.tex}
+%------------------------------------------------------------------------------
 
 
