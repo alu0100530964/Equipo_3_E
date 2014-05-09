@@ -1,0 +1,178 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 2: Fundamentos Teóricos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+\leftline{\Large{\bf Introducción}}
+Para poder hablar propiamente de la distribución geométrica primero debemos introducir algunos conceptos matemáticos, referidos a la parte de probabilidades.
+
+En primer lugar debemos contestar a la siguientes preguntas: ¿Qué es la probabilidad?, ¿Qué se entiende por función de distribución? y ¿Qué es una distribución de probabilidad discreta?. Por último, debemos profundizar sobre el objeto de nuestra investigación: \underline{la distribución geométrica}.
+\section{Conocimientos previos}
+
+\label{2:sec:1}
+La probabilidad se puede definir como una función sobre una pareja $(\Omega,A)$, donde $\Omega$ es el espacio muestral \footnote{Se llama \textit{espacio muestral} $\Omega$ a un conjunto matemático donde cada elemento representa un resultado (concreto) de un experimento.} y $A$ es la familia de sucesos se extiende a otros subconjuntos cumpliendo ciertas propiedades de álgebra, de la manera:
+\[P:A\rightarrow\Omega\]
+Esta función cumple las siguientes propiedades:
+\begin{itemize}
+ \item[$\circ$]$P(\Omega)=1$
+ \item[$\circ$]Si $A_1,A_2\in A: A_1 \cap A_2\neq \emptyset$ entonces $P(A_1\cup A_2)= P(A_1)+P(A_2)$
+\end{itemize}
+Dado un espacio probabilístico $(\Omega,A,P)$, una \textit{variable aleatoria} $\xi$ sobre $\Omega$ es una función real que actúa como un "aparato de medida" sobre los sucesos elementales:
+
+
+%\[\xi:\Omega \rightarrow \Re\]
+%\[\;\;\;\;\;\;\;\omega\mapsto \xi(\omega)\]
+\begin{equation}\label{dia1}
+  \begin{array}{cccc}
+    \xi:& \Omega & \rightarrow & \Re \\
+        & \omega & \mapsto & \xi(\omega) \\
+  \end{array}
+\end{equation}
+
+Se llama \underline{función de distribución} de $\xi$ a otra función real definida como:
+
+%\[F_{\xi}:\Re \rightarrow \Re\] \[x \mapsto F_{\xi}(x)=P(\lbrace\omega \in \Omega:\xi(\omega)\leq x\rbrace)\]
+
+\begin{equation}\label{dia2}
+  \begin{array}{ccccc}
+    F_{\xi}:& \Re & \rightarrow & \Re & \\
+        & x & \mapsto & F_{\xi}(x) &=P(\lbrace\omega \in \Omega:\xi(\omega)\leq x\rbrace) \\
+  \end{array}
+\end{equation}
+Cumpliendo las siguientes propiedades:
+\begin{itemize}
+ \item[$\circ$]$\lim\limits_{x \rightarrow -\infty}F(x)=0\; ; \;\lim\limits_{x \rightarrow \infty}F(x)=1$
+ \item[$\circ$]F no decreciente
+ \item[$\circ$]F continua por la derecha
+\end{itemize}
+Atendiendo a la forma de su función de distribución, las variables aleatorias reales pueden ser clasificadas en tres tipos:
+\begin{itemize}
+ \item[$\circ$]\textbf{Discretas:} Pueden tomar un número discreto (finito o numerable) de valores reales.
+ \item[$\circ$]\textbf{Continuas:} Pueden tomar todos los valores de uno o varios intervalos de la recta real, que pueden ser acotados o no acotados.
+ \item[$\circ$]\textbf{Mixtos:} Son combinaciones de las dos anteriores.
+\end{itemize}
+\subsection{Función de probabilidad}
+Dada una función de distribución $\xi$ (Véase \ref{dia2}), se llama función de probabilidad a:
+\begin{center}
+$P_{\xi}(k)=P(\lbrace {\omega}\in{\Omega}: \xi{(\omega)}=k\rbrace)$, para todo $k \in \Re$
+\end{center}
+En nuestro caso nos interesa estudiar la función de probabilidad de la variable discreta geométrica, la cual estudiaremos en la siguiente sección.
+\section{Distribución Geométrica}
+\label{2:sec:2}
+La distribución geométrica es un modelo adecuado para aquellos procesos en los que se repiten pruebas consecutivamente hasta obtener el resultado deseado (éxito).
+
+Esta distribución se puede expresar como una cualquiera de las dos distribuciones de probabilidad discreta siguientes:
+\begin{itemize}
+ \item[$\circ$]La distribución de probabilidad del número $X$ del ensayo de Bernoulli necesaria para obtener un éxito, contenido en el conjunto $\lbrace1,2,3,...\rbrace$
+ \item[$\circ$]La distribución del número $Y=X-1$ de fallos del primer éxito,contenido en el conjunto $\lbrace1,2,3,...\rbrace$
+\end{itemize}
+Atendiendo a la primera opción presenta las siguientes características:
+\begin{itemize}
+ \item[$\circ$]El proceso consta de un número no definido de pruebas o experimentales separados o separables.El proceso concluirá cuando se obtenga por primera vez el resultado deseado(éxito)
+ \item[$\circ$]Cada prueba puede dar dos resultados mutuamente excluyentes: $A$ y $\neg A$(no $A$) \footnote{En teoría de conjuntos también podemos escribirlo como $\overline{A}$ o $\Omega \backslash A$}
+ \item[$\circ$]La probabilidad de obtener un resultado $A$ en cada prueba es $p$ y la de obtener un resultado no $A$ es $q$, siendo $p+q=1$. \footnote{Gracias a esta característica podemos saber el valor de $p$(respectivamente $q$)a partir de su homólogo , es decir, $q$(respectivamente $p$)}
+ \item[$\circ$]Las probabilidades $p$ y $q$ son constantes en todas las pruebas, por tanto, las pruebas son independientes (Si se trata de un proceso de ''extracción'',este se llevara a cabo con devolución del sujeto extraído)
+\end{itemize}
+\subsection{Función de probabilidad de la distribución geométrica}
+Tal como se ha explicado con anterioridad, esta función de probabilidad se puede escribir de dos maneras posibles dependiendo de la definición de la distribución geométrica que se utilice.
+
+Si la probabilidad de éxito en cada ensayo es $p$, entonces la probabilidad de que $x$ ensayos sean necesarios para obtener un éxito es:
+\begin{center}
+$P(X=x)=(1-p)^{x-1}\cdot p$ para $x=0,1,2,3,...$.
+\end{center}
+Equivalentemente, la probabilidad de que haya x fallos antes del primer éxito es:
+\begin{center}
+$P(Y=x)=(1-p)^{x}\cdot p$ para $x=0,1,2,3,...$.
+\end{center}
+En ambos casos se corresponde con la función geométrica. En este trabajo utilizaremos la primera definición de esta función, tanto en el aspecto teórico como en el práctico.
+
+\leftline{\normalsize{\bf Obtención de la función de probabilidad}}
+
+En las condiciones de una distribución geométrica, podemos tomar X como una variables aleatoria, definida como:
+\begin{center}
+\bf {X= El número de pruebas necesarias para obtener por primera vez un éxito o resultado A}
+\end{center}
+Esta variable se distribuirá con una distribución geométrica de parámetro $p$, definida como:
+
+\centerline {X $\rightarrow Geo(p)$}
+
+Así tendremos que la variable X es el número de pruebas necesarias para la consecución del primer éxito. De esta forma las variables aleatorias toma valores enteros a partir de cero.
+
+La función de probabilidad $P(X)$ hará corresponder a cada valor X la probabilidad de obtener el primer éxito precisamente en la X-ésima prueba. Esto es, $P(X)$ será la probabilidad del suceso obtener $X-1$ resultados ''no $A$'' y  un éxito o resultado $A$ en la prueba número X tenieno en cuneta que todas las pruebas son independientes y que conocemos sus probabilidades, es decir, conocemos $p$ y $q$. Así tendremos:
+\begin{center}
+\textit{suceso}$\equiv \underbrace{\overline{A} \;y\; \overline{A} \;y\; ... \;y\; \overline{A}}_{X-1 vez} \;y\; \underbrace{\overline{A}}_{1 vez} = \underbrace{\overline{A}\cap \overline{A}\cap... \cap\overline{A}}_{X-1 vez}\;\cap \underbrace{\overline{A}}_{1 vez} $
+\end{center}
+dado que se trata de \underline{sucesos independientes} y conocemos las probabilidades tenemos que (Utilizando la Propiedad de probabilidades Apéndice):
+\begin{equation}
+P(x)=\underbrace{P({\overline{A}})\cdot P({\overline{A}})\cdot \cdot \cdot P({\overline{A}})}_{x-1 vez} \cdot P(A) = q^{n-1} \cdot p
+\end{equation}
+Luego la función de Probabilidad nos quedaría como queríamos ver:
+\begin{equation}
+P(x)= q^{n-1} \cdot p
+\end{equation}
+Algunos autores consideran la aleatorización como ''número de pruebas anteriores al primer éxito''. De esta manera el conseguir el éxito a la primera sería $X=0$. En la siguiente representación gráfica de la función de probabilidad (Veáse la Figura \ref{imagen})de la geométrica puede apreciarse este tipo de aleatorización.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=6cm]{images/grafica1.png}
+\centering
+\caption{Función de probabilidad geométrica con $p= 0.3$}
+\label{imagen}
+\end{center}
+\end{figure}
+\subsection{Función de distribución}
+En base de la función de probabilidad se puede expresar la función de distribución de la siguiente manera:
+\begin{equation}
+F(x)= \sum_{x=1}^{X} q^{x-1} \cdot p
+\end{equation}
+Desarrollando la expresión tendríamos:
+\begin{equation}
+F(x)= p \cdot (1+q+q^2+q^3+...+q^{x-1})=p \cdot \frac{1-q^x}{1-q}
+\end{equation}
+de donde: $F(x)=1-q^x$.
+ las gráfica análoga a la anterior:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=6cm]{images/grafica2.png}
+\centering
+\caption{Distribución geométrica con $p= 0.3$}
+\label{imagen1}
+\end{center}
+\end{figure}
+
+\subsection{Propiedades de la geométrica}
+\begin{itemize}
+ \item[$\circ$]\bf{La media:} $E(X)=\frac{1}{p}$ o $E(Y)=\frac{1-p}{p}$
+ \item[$\circ$]\bf{La varianza:}$var(X)=var(Y)=\frac{1-p}{p^2}$
+ \item[$\circ$]\bf{Las funciones generatrices:}
+ \begin{center}
+ $G_X(s)=\frac{s\cdot p}{1-s(1-p)}$ \hspace{1cm} \text{y} \hspace{1cm} $G_Y(s)=\frac{p}{1-s(1-p)}$, $\; \vert s \vert < (1-p)^{-1}$
+ \end{center}
+ \item[$\circ$]\textbf{La moda:} es el valor de la variable que tiene asociada mayor probabilidad. Es fácil comprobar (Véase la Figura \ref{imagen}) que:
+ \[P(x_i)\leq P(x=1) \forall x_i\]
+ \item[$\circ$]\bf{La mediana $M_e$:} será aquel valor de la variable en el cual la función de distribución toma el valor 0.5. Así: $F(M_e)=1-q^M=\frac{1}{2}\Rightarrow q^M = \frac{1}{2}$
+,por lo que, $M_e \cdot ln(q)=ln(1)-ln(2)=-ln(2)\longrightarrow M_e=\frac{-ln(2)}{ln(q)}$
+ \item[$\circ$]\bf{Función de Momentos (F.G.M):}
+ \begin{equation*}\label{per}
+   \begin{split}
+     \varphi(t) & =E[e^{tx}]=\sum_{x=1}^{\infty} {e^{tx} \cdot p \cdot q^{x-1}} =\frac{p}{q}\sum_{x=1}^{\infty} {(e^{t} \cdot q)}^x=\lim\limits_{x \rightarrow -\infty}\frac{p}{q}\left( qe^t + (qe^t)^2+...+(qe^t)^x\right)\\
+                          & =\lim\limits_{x \rightarrow -\infty}\frac{p}{q} \left[\frac{\cancelto{0}{(qe^t)^{x+1}}-qe^t}{qe^t-1}\right] =\frac{p}{\cancel{q}} \left[\frac{\cancel{q}e^t}{1-qe^t}\right] =p \left[\frac{e^t}{1-qe^t}\right] =\frac{p}{e^{-t}-q}\\
+                          & =p(e^{-t}-q)^{-1}
+   \end{split}
+ \end{equation*}
+
+ Por lo que queda establecida que la F.G.M. tiene la expresión:
+ \begin{center}
+ $\varphi(t)= p(e^{-t}-q)^{-1}$
+ \end{center}
+\end{itemize}
+Siguiendo el ejemplo de las figuras anteriores obtenemos los siguientes resultados:
+
+%------------------------------------------------------------------------------
+\input{tables/datos.tex}
+%------------------------------------------------------------------------------
+
+

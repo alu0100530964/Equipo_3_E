@@ -1,0 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 4: Conclusiones y Trabajos Futuros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Se nos asign\'o en este trabajo  hacer un programa Python que solucionara la funci\'on de probabilidad de la distribuci\'on geom\'etrica, para ello tuvimos que buscar informaci\'on sobre esta distribuci\'on.
+Despu\'es iniciamos la implementaci\'on de la funci\'on de la probabilidad, para ello creamos una funci\'on (def calcular\_geo). \\
+
+Esta funci\'on nos serv\'ia en alguno de los problemas, pero no en otros casos. Este problema lo solucionamos mediante ensayo y error, solucionando as\'i nuestro dilema incorporando una nueva funci\'on.\\
+
+Podemos sacar como conclusi\'on que tenemos que intentar varias veces un programa hasta purificarlo y sacar un programa eficiente y operativo. Adem\'as, gracias a nuestra b\'usqueda de informaci\'on hemos podido refrescar y ampliar conocimientos sobre probabilidades, m\'as concretamente sobre la distribuci\'on geom\'etrica.

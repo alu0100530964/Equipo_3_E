@@ -1,0 +1,8 @@
+('default', 'Feb 27 2014 20:00:17')
+Linux-3.2.0-61-generic-i686-with-Ubuntu-12.04-precise
+('Linux', 'B02', '3.2.0-61-generic', '#92-Ubuntu SMP Mon Mar 31 23:50:23 UTC 2014', 'i686', 'i686')
+2.7.3
+Pentium(R) Dual-Core  CPU      E5300  @ 2.60GHz
+GenuineIntel
+2593.572 Hz
+2048 KB

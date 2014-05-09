@@ -1,0 +1,127 @@
+\section{Algoritmo Principal:}
+\label{Apendice1:XXX}
+
+\begin{center}
+\begin{footnotesize}
+\begin{verbatim}
+###################################################################################
+# sol_geo.py
+###################################################################################
+#
+# AUTORES: Maria Baeza Lopez
+#          Juan Jesus Doniz Labrador
+#          Jesus Manuel Rodriguez Falcon
+#
+# FECHA: 09/05/2014
+#
+# DESCRIPCION: Este programa realiza el calculo de la Distribucion Geometrica, dados los
+#			   parametros de entrada n y p, utilizando el modulo: mod_geo.py.
+#              Este programa da 4 opciones al usuario para el calculo de dicha distribucion:
+#			   (0=P(X=n),1=P(X<=n,2=P(X<n),3=P(x>=n))
+#
+###################################################################################
+
+#!/usr/bin/python
+#!encoding: UTF-8
+import sys
+import mod_geo
+import time
+import timeit
+# Menu principal
+argumentos = sys.argv[1:]
+ # print argumentos         Imprime la lista con los parametros que le des desde la consola
+if (len(argumentos) == 2):# si la lista es de dos elementos (n,p)
+  n = int(argumentos[0])
+  p = float(argumentos[1])
+else:
+    print "Introduzca el n de pruebas necesarias para obtener un exito (n>0):"
+    n = int (raw_input())
+    print "Introduzca el valor p (p>0):"
+    p = float(raw_input())
+if (n > 0):
+  print "¿Que tipo de probabilidad vas a hallar? (0=P(X=n), 1=P(X<=n), 2=P(X<n), 3=P(X>=n))"
+  respuesta=int(raw_input())
+  if (respuesta==0):
+    start=time.time()
+    probabilidad=mod_geo.calcular_geo (n,p)
+    finish=time.time()-start
+    print "La probabilidad P[X= %d] con p= %f es: %f y 
+           he tardado %f segundos en calcularlo"  %(n,p,probabilidad,finish)
+  elif (respuesta==1):
+    start=time.time()
+    probabilidad=mod_geo.calcular_geo1(n,p)
+    finish=time.time()-start
+
+    print "La probabilidad P[X<= %d] con p= %f es: %f y 
+           he tardado %f segundos en calcularlo"  %(n,p,probabilidad,finish)
+  elif (respuesta == 2):
+    start=time.time()                        
+    probabilidad=mod_geo.calcular_geo1(n-1,p)
+    finish=time.time()-start                 
+
+    print "La probabilidad P[X< %d] con p= %f es: %f y 
+           he tardado %f segundos en calcularlo"  %(n,p,probabilidad,finish)
+  else:
+    start=time.time()                       
+    prob=mod_geo.calcular_geo1(n,p)
+    probabilidad = 1 - prob
+    finish=time.time()-start                 
+
+    print "La probabilidad P[X>= %d] con p= %f es: %f y 
+           he tardado %f segundos en calcularlo"  %(n,p,probabilidad,finish)
+
+else:
+    print "No podemos hallar la probabilidad"
+
+
+\end{verbatim}
+\end{footnotesize}
+\end{center}
+
+\newpage
+\section{Algoritmo del Modulo:}
+\label{Apendice1:YYY}
+
+\begin{center}
+\begin{footnotesize}
+\begin{verbatim}
+###################################################################################
+# mod_geo.py
+###################################################################################
+#
+# AUTORES: Maria Baeza Lopez
+#          Juan Jesus Doniz Labrador
+#          Jesus Manuel Rodriguez Falcon
+#
+# FECHA: 09/05/2014
+#
+# DESCRIPCION: Este modulo contiene dos funciones:
+#             1. calcular_geo (n,p)---->calcula la probabilidad geometrica
+#			  y la devuelve a sol_geo.py
+#             2. calcular_geo1 (n,p)--->Calcula la probabilidad geometrica
+#             desde 1 hasta n y las va almacenando en sumaprobabilidad
+#
+###################################################################################
+
+#!/usr/bin/python
+#!encoding: UTF-8
+import sys
+import math
+
+def calcular_geo (n,p):
+  if (n>1):
+    q=1-p
+    probabilidad=(q**(n-1))*p
+  else:
+    probabilidad=p
+  return (probabilidad)
+
+def calcular_geo1 (n,p):
+  probabilidad=0
+  for i in range (1,n+1):
+    sumaprobabilidad=calcular_geo(i,p)
+    probabilidad+=sumaprobabilidad
+  return (probabilidad)
+\end{verbatim}
+\end{footnotesize}
+\end{center}

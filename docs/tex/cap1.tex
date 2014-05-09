@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 1: Motivación y Objetivos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Motivación}
+  
+  A lo largo de este cuatrimestre en la asignatura de Técnicas Experimentales hemos recurrido a la utilización de numerosas e innovadoras herramientas para la asimilación de conceptos y resolución de numerosos problemas del ámbito científico-técnico.
+ \\
+
+   En el presente trabajo, se detallarán las características de las diferentes funciones matemáticas correspondientes al área de Probabilidades, realizando un mayor hincapié en la  diferentes funciones de probabilidad existentes, situaciones de la vida cotidiana que necesitan de éstas para comprenderlas y analizarlas, junto a las propiedades que acompañan a dichas funciones.
+ \\
+
+ Finalmente, dentro del siguiente documento nos vamos a centrar en la función Geométrica.
+
+\subsection{Problemas resueltos}
+Como parte de las observaciones que estudiamos en el presente trabajo, hemos buscado diferentes tipos de problemas donde se puede contemplar la utilización y la aplicabilidad tanto de la distribución geométrica como el cálculo de probabilidad de la misma.\footnote{Previamente están solucionados a mano,aunque también utilizaremos nuestra función implementada en Python}
+\subsubsection{Problema 1: Número de hijos}
+\begin{shaded}
+{\color{white}Un matrimonio ha decidido tener una hija, y para ello están dispuestos a tener hijos hasta que nazca una niña.Calcular el número esperado de hijos (tanto niños como niñas) que tendrá el matrimonio. Calcular la probabilidad de que la pareja anterior acabe teniendo tres hijos o más.}
+\end{shaded}
+
+\leftline{\Large{\bf Solución:}}
+
+Leyendo el enunciado del problema anterior podemos observar que se trata de una variable geométrica. Supongamos que la probabilidad de tener  niños es la misma que la probabilidad de tener niñas. Además, sea X la siguiente variable aleatoria:
+\begin{center}
+\bf{X = número de hijos varones antes de que nazca una niña}
+\end{center}
+De ahí concluímos la afirmación posterior:
+\begin{center}
+\bf{$X\rightarrow Geo(p=\frac{1}{2})\Leftrightarrow P[X=k]= q^{k-1}\cdot p = \frac{1}{2^k}$}
+\end{center}
+Sabemos que el número esperado de hijos varones que va a tener la familia es {\bf{$E[X]=\frac{q}{p}=(\frac{1}{2})/(\frac{1}{2})=1$}},  de lo que es fácil deducir que el número total de hijos varones y la niña es 2.
+\\
+
+En otro de los apartados se nos pide calcular la probabilidad de que la pareja acabe teniendo tres hijos o más. Sabemos que la probabilidad de que la pareja acabe teniendo tres o más hijos equivale a la probabilidad de que la pareja tenga dos o más hijos varones, es decir:
+\begin{equation}\label{ejy}
+ \begin{split}
+  P[X\geq2] & = 1-P[X<2]\\
+    &= 1-P[X\leq1]\\
+    &= 1-P[X=0]-P[X=1]\\
+    &= 1-p-qp\\
+    & =1- \frac{1}{2}-\left(\frac{1}{2}\right)\cdot\left(\frac{1}{2}\right)\\
+    & =\frac{1}{4}
+\end{split}
+\end{equation}
+
+
+\subsubsection{Problema 2: Tantos en baloncesto}
+\begin{shaded}
+{\color{white}Un jugador de baloncesto no cesa en su intento de lanzar pelotas a la canasta que se halla situada a 2 metros de altura hasta que consiga introducir una de éstas a través del aro. Si se supone que sus tiros son independientes y que la probabilidad de anotar una canasta es de 0.8,¿ cuál es la probabilidad de que el baloncestista necesite realizar dos tiros?¿ y de que sean tres tiros, cuatro tiros, cinco tiros, etc. hasta deducir la fórmula para n tiros?¿ cuál es la probabilidad de necesitar como mucho cinco tiros?}
+\end{shaded}
+
+\leftline{\Large{\bf Solución:}}
+
+Supongamos que tenemos la siguiente variable aleatoria:
+
+\begin{center}
+\bf{X = número de tiros necesarios por el baloncestista hasta anotar una canasta}
+\end{center}
+Ahora bien, sabemos que los valores de p y q son los siguientes:
+\begin{center}
+{$p=0.8;\; q=1-p= 1-0.8= 0.2$}
+\end{center}
+Procedamos por tanto, a calcular dichas probabilidades:
+\begin{itemize}
+\item [$\circ$]{$P[X=1]=  p= 0.8 $}
+\item [$\circ$]{$P[X=2]= q\cdot p= 0.8\cdot 0.2 = 0.16$}
+\item [$\circ$]{$P[X=3]= q\cdot q\cdot p= 0.8\cdot 0.8\cdot 0.2 = 0.032$}
+\item [$\circ$]{$P[X=4]= q\cdot q\cdot q\cdot p= 0.8\cdot 0.8\cdot 0.8\cdot 0.2 = 0.0064$}
+\item [$\circ$]{$P[X=5]= q\cdot q\cdot q\cdot q\cdot p= 0.8\cdot 0.8\cdot 0.8\cdot 0.8\cdot 0.2 = 0.00128$}
+\end{itemize}
+Luego, de aquí es fácil apreciar que:
+\begin{center}
+{$P[X=n]= q^{n-1}\cdot p$}
+\end{center}
+
+Veamos ahora cuál es la probabilidad de necesitar como máximo cinco tiros para encestar en la canasta. Para ello vemos que:
+\begin{center}
+{$P[X\leq5]=P[X=1]+P[X=2]+P[X=3]+P[X=4]+P[X=5]$}
+\end{center}
+Atendiendo a los resultados del apartado anterior nos queda:
+\begin{center}
+{$P[X\leq5]=0.8 + 0.16 + 0.032 + 0.0064 +0.00128 = 0.99968$}
+\end{center}
+
+\subsubsection{Problema 3: Dados}
+\begin{shaded}
+{\color{white}Se lanza un dado hasta que aparece el número 4. ¿ Cuál es la probabilidad de que el número de lanzamientos sean 3?}
+\end{shaded}
+
+\leftline{\Large{\bf Solución:}}
+
+En este ejercicio se nos pide calcular la probabilidad de realizar sólo tres lanzamientos del dado. Para ello definamos la siguiente variable aleatoria de la manera que se muestra a continuación:
+\begin{center}
+\bf{X = número de lanzamientos a efectuar con el dado hasta que aparezca el valor 4 en una de sus caras}
+\end{center}
+De acuerdo con el enunciado del problema sabemos que {$p=\frac{1}{6}$} y, por tanto, {$q=1-p=1-\frac{1}{6}=\frac{5}{6}$}.
+De acuerdo con esto, y recurriendo a la fórmula de recurrencia obtenida en el problema anterior ({$\textit{ véase el problema 1.2 }$})
+\begin{center}
+{$P[X=n]= q^{n-1}\cdot p$}
+\end{center}
+y tomando como valor n=3 podemos obtener el siguiente resultado:
+\begin{center}
+{$P[X=3]= (\frac{5}{6})^{3-1}\cdot (\frac{1}{6})=$}  {$(\frac{5}{6})^{2}\cdot (\frac{1}{6})$}{$=(\frac{25}{36})\cdot (\frac{1}{6})$}={$0.1157$}
+\end{center}
+
+\newpage
+\subsubsection{Problema 4: Reacción frente a un medicamento}
+\begin{shaded}
+{\color{white}La probabilidad de que cierto análisis clínico dé una reacción positiva es 0.4. Los resultados de los análisis son independientes unos de otros ¿ Cuál es la probabilidad de que la primera reacción positiva ocurra antes del tercer análisis?}
+\end{shaded}
+
+\leftline{\Large{\bf Solución:}}
+
+Definamos la siguiente variable aleatoria:
+\begin{center}
+\bf{X = probabilidad de que un individuo reaccione frente al medicamento}
+\end{center}
+Queremos ver la probabilidad que existe de que la reacción positiva sea antes del tercer análisis.Como los valores proporcionados por el problema son {$p=0.4;\; q=1-p=0.6$} nos queda:
+\begin{center}
+{$P[X<3]=P[X=1]+P[X=2]= (0.6)^{1-1}\cdot (0.4)+ (0.6)^{2-1}\cdot (0.4) = 0.64$}
+\end{center}
+
+

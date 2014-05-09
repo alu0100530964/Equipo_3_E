@@ -1,0 +1,25 @@
+%--------------------------------------------------------------------------
+\begin{table}[!ht]
+\begin{center}
+\scalebox{0.6}{
+\begin{tabular}{|c||l||l||p{2.5cm}||p{2.5cm}||p{2.5cm}||p{2.5cm}||}
+\hline
+\rowcolor[RGB]{0,88,147} \textbf{Problemas:  } & \textbf{p} &\textbf{Resultado Python (1) }& \textbf{Resultado ''a mano''(2)} & \textbf{Calculadora Online}(3) & \textbf{Error entre (1) y (2)} &  \textbf{Error entre (1) y (3)} \\ \hline
+ 1 & 0.5 & $P[X\geq 2]=0.25$ & $\frac{1}{4}$ & 0.25 & 0 & 0   \\
+ 2 & 0.8 & $P[X=1]=0.8$ & 0.8 & 0.8 & 0 & 0 \\
+   & 0.8 &$P[X=2]=0.16$ & 0.16 & 0.16 & 0 & 0\\
+   & 0.8 &$P[X=3]=0.032$ & 0.032 & 0.0032 & 0 & 0 \\
+   & 0.8 &$P[X=4]=0.0064$ & 0.0064 & 0.0064 & 0 & 0\\
+   & 0.8 &$P[X=5]=0.001280$ & 0.0013 & 0.00128 & $2\cdot 10^{-6}$ & 0 \\
+   & 0.8 &$P[X\leq 0]=0.999680$ & 0.99968 & 0.99968 & 0 & 0\\
+ 3 & 0.16666666 &$P[X=3]=0.115741$ & 0.1157 &  0.115773796296 & $4.1\cdot 10^{-5}$ & $3.04\cdot 10^{-6}$ \\
+ 4 & 0.4 &$P[X<3]=0.64$ & 0.64 & 0.64 & 0 & 0 \\
+ \hline
+
+\end{tabular}
+}
+\end{center}
+\caption{Tabla de resultados y c\'alculo de errores.}
+\label{tab:1}
+\end{table}
+
