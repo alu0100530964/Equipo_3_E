@@ -1,0 +1,26 @@
+#!/usr/bin/python
+#! enconding: UTF-8
+
+import pylab as dibujo
+
+x = [20,40,60,80,100]
+y1 = [0.000051,0.000045,0.000046,0.000046,0.000048]
+y2 = [0.000095,0.000112,0.000133,0.000158,0.000183]
+y3 = [0.000086,0.000112,0.000134,0.000159,0.000185]
+y4 = [0.000089,0.000113,0.000139,0.000164,0.000188]
+
+dibujo.title ('Tiempo')
+
+dibujo.plot (x, y1,linestyle='-.',marker='*',color='r', label='Para el caso 0')  #':' '--' '_' . Los colores son 'r'  junto a m b g c y.    Los marker son 'o' junto a s p * + . ^
+dibujo.plot (x, y2,linestyle='--',marker='*',color='b', label='Para el caso 1')
+dibujo.plot (x, y3,linestyle='-',marker='*',color='g', label='Para el caso 2')
+dibujo.plot (x, y4,linestyle=':',marker='*',color='m', label='Para el caso 3')
+
+dibujo.legend()      # Esto se pone para que aparezca la leyenda de las lineas
+dibujo.xlim(10,155)
+dibujo.ylim(0.000044,0.000190)
+dibujo.xticks(x)
+dibujo.xlabel ('Valores de la n')
+dibujo.ylabel ('Tiempo en segundos')
+
+dibujo.show()
