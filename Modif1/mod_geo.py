@@ -1,0 +1,19 @@
+#!/usr/bin/python
+#!encoding: UTF-8
+import sys
+import math
+
+def calcular_geo (n,p):
+  if (n>1):
+    q=1-p
+    probabilidad=(q**(n-1))*p
+  else:
+    probabilidad=p
+  return (probabilidad)
+  
+def calcular_geo1 (n,p):
+  probabilidad=0
+  for i in range (1,n+1):
+    sumaprobabilidad=calcular_geo(i,p)
+    probabilidad+=sumaprobabilidad
+  return (probabilidad)

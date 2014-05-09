@@ -1,0 +1,10 @@
+﻿En esta modificación,:
+
+1. Sol_ geo.py
+   Se ha corregido los errores de compilación del tiempo.
+2. Código de latex:
+   2.1. Se ha introducido el apéndice con los códigos en Python.
+   2.2. Se ha introducido los tiempos de respuesta de ejecución de los     	 	ejercicios en Python.
+   2.3. Se han corregido los errores en las tablas.
+   2.4. Se ha introducido el los análisis de resultados, así como   las 	conclusiones.
+

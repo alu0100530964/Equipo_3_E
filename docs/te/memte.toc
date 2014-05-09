@@ -1,10 +1,11 @@
 \select@language {spanish}
 \contentsline {chapter}{\numberline {1}Motivaci\'on y objetivos}{1}
-\contentsline {section}{\numberline {1.1}Problemas resueltos}{1}
-\contentsline {subsection}{\numberline {1.1.1}Problema 1: N\'umero de hijos}{1}
-\contentsline {subsection}{\numberline {1.1.2}Problema 2: Tantos en baloncesto}{2}
-\contentsline {subsection}{\numberline {1.1.3}Problema 3: Dados}{3}
-\contentsline {subsection}{\numberline {1.1.4}Problema 4: Reacci\'on frente a un medicamento}{3}
+\contentsline {section}{\numberline {1.1}Motivaci\'on}{1}
+\contentsline {subsection}{\numberline {1.1.1}Problemas resueltos}{1}
+\contentsline {subsubsection}{Problema 1: N\'umero de hijos}{1}
+\contentsline {subsubsection}{Problema 2: Tantos en baloncesto}{2}
+\contentsline {subsubsection}{Problema 3: Dados}{3}
+\contentsline {subsubsection}{Problema 4: Reacci\'on frente a un medicamento}{4}
 \contentsline {chapter}{\numberline {2}Fundamentos te\'oricos}{5}
 \contentsline {section}{\numberline {2.1}Conocimientos previos}{5}
 \contentsline {subsection}{\numberline {2.1.1}Funci\'on de probabilidad}{6}
@@ -14,14 +15,11 @@
 \contentsline {subsection}{\numberline {2.2.3}Propiedades de la geom\'etrica}{9}
 \contentsline {chapter}{\numberline {3}Procedimiento experimental}{11}
 \contentsline {section}{\numberline {3.1}Descripci\'on de los experimentos}{11}
-\contentsline {section}{\numberline {3.2}Descripci\'on del material}{12}
-\contentsline {section}{\numberline {3.3}Resultados obtenidos}{12}
+\contentsline {section}{\numberline {3.2}Descripci\'on del material}{11}
+\contentsline {section}{\numberline {3.3}Resultados obtenidos:}{13}
 \contentsline {section}{\numberline {3.4}An\'alisis de los resultados}{13}
-\contentsline {chapter}{\numberline {4}Conclusiones}{14}
-\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo del Ap\'endice 1}{15}
-\contentsline {section}{\numberline {A.1}Algoritmo XXX}{15}
-\contentsline {section}{\numberline {A.2}Algoritmo YYY}{15}
-\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo del Ap\'endice 2}{16}
-\contentsline {section}{\numberline {B.1}Otro apendice: Seccion 1}{16}
-\contentsline {section}{\numberline {B.2}Otro apendice: Seccion 2}{16}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{16}
+\contentsline {chapter}{\numberline {4}Conclusiones}{15}
+\contentsline {chapter}{\numberline {A}Ap\'endice 1: }{17}
+\contentsline {section}{\numberline {A.1}Algoritmo Principal:}{17}
+\contentsline {section}{\numberline {A.2}Algoritmo del Modulo:}{19}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{19}

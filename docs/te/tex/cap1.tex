@@ -1,7 +1,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter 1: Motivación y Objetivos
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\section{Motivación}
+  
   A lo largo de este cuatrimestre en la asignatura de Técnicas Experimentales hemos recurrido a la utilización de numerosas e innovadoras herramientas para la asimilación de conceptos y resolución de numerosos problemas del ámbito científico-técnico.
  \\
 
@@ -10,10 +11,11 @@
 
  Finalmente, dentro del siguiente documento nos vamos a centrar en la función Geométrica.
 
-\section{Problemas resueltos}
-\subsection{Problema 1: Número de hijos}
+\subsection{Problemas resueltos}
+Como parte de las observaciones que estudiamos en el presente trabajo, hemos buscado diferentes tipos de problemas donde se puede contemplar la utilización y la aplicabilidad tanto de la distribución geométrica como el cálculo de probabilidad de la misma.\footnote{Previamente están solucionados a mano,aunque también utilizaremos nuestra función implementada en Python}
+\subsubsection{Problema 1: Número de hijos}
 \begin{shaded}
-Un matrimonio ha decidido tener una hija, y para ello están dispuestos a tener hijos hasta que nazca una niña.Calcular el número esperado de hijos (tanto niños como niñas) que tendrá el matrimonio. Calcular la probabilidad de que la pareja anterior acabe teniendo tres hijos o más.
+{\color{white}Un matrimonio ha decidido tener una hija, y para ello están dispuestos a tener hijos hasta que nazca una niña.Calcular el número esperado de hijos (tanto niños como niñas) que tendrá el matrimonio. Calcular la probabilidad de que la pareja anterior acabe teniendo tres hijos o más.}
 \end{shaded}
 
 \leftline{\Large{\bf Solución:}}
@@ -24,7 +26,7 @@ Leyendo el enunciado del problema anterior podemos observar que se trata de una 
 \end{center}
 De ahí concluímos la afirmación posterior:
 \begin{center}
-\bf{$X\rightarrow Geo(p=\frac{1}{2})\Leftrightarrow P[X=k]= q^{x-1}\cdot p = \frac{1}{2^k}$}
+\bf{$X\rightarrow Geo(p=\frac{1}{2})\Leftrightarrow P[X=k]= q^{k-1}\cdot p = \frac{1}{2^k}$}
 \end{center}
 Sabemos que el número esperado de hijos varones que va a tener la familia es {\bf{$E[X]=\frac{q}{p}=(\frac{1}{2})/(\frac{1}{2})=1$}},  de lo que es fácil deducir que el número total de hijos varones y la niña es 2.
 \\
@@ -42,9 +44,9 @@ En otro de los apartados se nos pide calcular la probabilidad de que la pareja a
 \end{equation}
 
 
-\subsection{Problema 2: Tantos en baloncesto}
+\subsubsection{Problema 2: Tantos en baloncesto}
 \begin{shaded}
-Un jugador de baloncesto no cesa en su intento de lanzar pelotas a la canasta que se halla situada a 2 metros de altura hasta que consiga introducir una de éstas a través del aro. Si se supone que sus tiros son independientes y que la probabilidad de anotar una canasta es de 0.8,¿ cuál es la probabilidad de que el baloncestista necesite realizar dos tiros?¿ y de que sean tres tiros, cuatro tiros, cinco tiros, etc. hasta deducir la fórmula para n tiros?¿ cuál es la probabilidad de necesitar como mucho cinco tiros?
+{\color{white}Un jugador de baloncesto no cesa en su intento de lanzar pelotas a la canasta que se halla situada a 2 metros de altura hasta que consiga introducir una de éstas a través del aro. Si se supone que sus tiros son independientes y que la probabilidad de anotar una canasta es de 0.8,¿ cuál es la probabilidad de que el baloncestista necesite realizar dos tiros?¿ y de que sean tres tiros, cuatro tiros, cinco tiros, etc. hasta deducir la fórmula para n tiros?¿ cuál es la probabilidad de necesitar como mucho cinco tiros?}
 \end{shaded}
 
 \leftline{\Large{\bf Solución:}}
@@ -80,9 +82,9 @@ Atendiendo a los resultados del apartado anterior nos queda:
 {$P[X\leq5]=0.8 + 0.16 + 0.032 + 0.0064 +0.00128 = 0.99968$}
 \end{center}
 
-\subsection{Problema 3: Dados}
+\subsubsection{Problema 3: Dados}
 \begin{shaded}
-Se lanza un dado hasta que aparece el número 4. ¿ Cuál es la probabilidad de que el número de lanzamientos sean 3?
+{\color{white}Se lanza un dado hasta que aparece el número 4. ¿ Cuál es la probabilidad de que el número de lanzamientos sean 3?}
 \end{shaded}
 
 \leftline{\Large{\bf Solución:}}
@@ -101,9 +103,10 @@ y tomando como valor n=3 podemos obtener el siguiente resultado:
 {$P[X=3]= (\frac{5}{6})^{3-1}\cdot (\frac{1}{6})=$}  {$(\frac{5}{6})^{2}\cdot (\frac{1}{6})$}{$=(\frac{25}{36})\cdot (\frac{1}{6})$}={$0.1157$}
 \end{center}
 
-\subsection{Problema 4: Reacción frente a un medicamento}
+\newpage
+\subsubsection{Problema 4: Reacción frente a un medicamento}
 \begin{shaded}
-La probabilidad de que cierto análisis clínico dé una reacción positiva es 0.4. Los resultados de los análisis son independientes unos de otros ¿ Cuál es la probabilidad de que la primera reacción positiva ocurra antes del tercer análisis?
+{\color{white}La probabilidad de que cierto análisis clínico dé una reacción positiva es 0.4. Los resultados de los análisis son independientes unos de otros ¿ Cuál es la probabilidad de que la primera reacción positiva ocurra antes del tercer análisis?}
 \end{shaded}
 
 \leftline{\Large{\bf Solución:}}

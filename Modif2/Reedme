@@ -1,0 +1,5 @@
+En esta modificación,:
+
+1. Sol_ geo.py
+   Se ha corregido los errores de compilación del tiempo.
+   Queda pendiente lo de utilizar un fichero de salida para almcenar los datos.

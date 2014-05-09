@@ -3,7 +3,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \leftline{\Large{\bf Introducción:}}
-En éste capítulo, se describirán los diversos materiales utilizados en la elaboración y ralización del algoritmo diseñados en el software Python. Además, se implementará el algoritmo de la distribución geométrica, para observar los procesos en cada paso de ejecución del progrma. Finalmente, se expondrán los resultados finales y las conclusiones que de ellos se desprendan.
+En éste capítulo, se describirán los diversos materiales utilizados en la elaboración y ralización del algoritmo diseñados en el software Python. Además, se implementará el algoritmo de la distribución geométrica, para observar los procesos en cada paso de ejecución del programa. Finalmente, se expondrán los resultados finales y las conclusiones que de ellos se desprendan.
 
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -16,52 +16,78 @@ En éste capítulo, se describirán los diversos materiales utilizados en la elabor
 \begin{enumerate}
 	 \item \textbf{Distribución Geometrica. }
 \begin{description}
-	 \item[Análisis:] Vease el capítulo 2.
-  \item[Formulación] Introducción de los parámetros:
-  \begin{itemize}
-  	 \item Probabilidad $p$
-    \item  Número de casos: $n$
-  \end{itemize}
-  \item[Algoritmo: (ver Figura \ref{dflu}).] 
-\begin{figure}[!ht]
+  \item[Análisis:] Vease el capítulo 2.
+  \item[Formulación] Introducción de parámetros: Probabilidad $p$ y número de casos $n$
+  \item[Algoritmo: (ver Figura \ref{dflu}).]
+\begin{figure}[h!]
   \centering
   % Requires \usepackage{graphicx}
-  \includegraphics[width=2.8cm]{images/diafluj.png}\\
+  \includegraphics[width=5cm]{images/diafluj.png}
   \caption{Diagrama de Flujo de la Distribución Geométrica}\label{dflu}
 \end{figure}	
   \item[Codifición] Vease el código en  en el apéndice 1.
-  \item[Evalución y prueba*] Va en las conclusiones.
 \end{description}
 \end{enumerate}
+
 
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Descripción del material}
 \label{3:sec:2}
-El material utilizado para los diversos programas realizados en Python:
+Tanto para la ejecución en Python, como para la implementación en \LaTeX{}, hemos utilizado:
+
 \begin{enumerate}
 	 \item \textbf{Ordenadores:}
 %------------------------------------------------------------------------------
 \input{tables/ord.tex}
 %------------------------------------------------------------------------------
 
-        
-  \item \textbf{Python}
+
+  \item \textbf{Versión de Python:}
+  Para la realización del programa que soluciona los distintos problemas, anteriormente descritos, utilizaremos la siguiente versión de Python:
+  \begin{center}
+  \textbf{PYTHON 2.7.3 [GCC 4.6.3] ON LINUX2}
+  \end{center}
+
+  \item \textbf{Versiones de \LaTeX{}}
+%------------------------------------------------------------------------------
+\input{tables/latex.tex}
+%------------------------------------------------------------------------------
+
+
 
 \end{enumerate}
 
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-\section{Resultados obtenidos}
+\newpage
+\section{Resultados obtenidos:}
 \label{3:sec:3}
 
-bla, bla, etc.
+Para la realización de la siguiente tabla \ref{tab:1}, nos hemos ayudado de los problemas resueltos en el capítulo 1. Se ha añadido el cálculo del error entre los resultados obtenidos, por el programa diseñado en Python, en comparación con los resultados obtenidos : ''a mano'' y con una calculadora online \cite{URL:XML}
 
+%------------------------------------------------------------------------------
+\input{tables/table.tex}
+%------------------------------------------------------------------------------
+
+%parrafo del tiempo
+
+Tabla del tiempo:
+
+
+
+
+
+%------------------------------------------------------------------------------
+\input{tables/time.tex}
+%------------------------------------------------------------------------------
+
+% parrafo de la grafica
 
 %------------------------------------------------------------------------------
 \begin{figure}[!th]
 \begin{center}
-\includegraphics[width=0.75\textwidth]{images/figura1.eps}
+\includegraphics[width=0.75\textwidth]{images/figura1.png}
 \caption{Ejemplo de figura}
 \label{fig:1}
 \end{center}
@@ -69,9 +95,7 @@ bla, bla, etc.
 %------------------------------------------------------------------------------
 
 
-%------------------------------------------------------------------------------
-\input{tables/table.tex}
-%------------------------------------------------------------------------------
+
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Análisis de los resultados}

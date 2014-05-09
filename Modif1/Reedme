@@ -1,0 +1,9 @@
+En esta modificación, se ha introducido:
+
+1. Mod_geo.py
+   Modulo con las funciones utilizadas en el programa
+2. Sol_ geo.py
+   El usuario introducirá los datos para el calculo de la distribución Geométrica.
+3. ej_graf.py
+   Nos muestra por pantalla los gáficos de los valores dados por el usuario (un ejemplo, para implementarlo con nusetros datos)
+   

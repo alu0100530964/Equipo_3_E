@@ -73,7 +73,7 @@ Atendiendo a la primera opción presenta las siguientes características:
 \begin{itemize}
  \item[$\circ$]El proceso consta de un número no definido de pruebas o experimentales separados o separables.El proceso concluirá cuando se obtenga por primera vez el resultado deseado(éxito)
  \item[$\circ$]Cada prueba puede dar dos resultados mutuamente excluyentes: $A$ y $\neg A$(no $A$) \footnote{En teoría de conjuntos también podemos escribirlo como $\overline{A}$ o $\Omega \backslash A$}
- \item[$\circ$]La probabilidad de obtener un resultado $A$ en cada prueba es $p$ y la de obtener un resultado no $A$ es $q$, siendo $p+q=1$. \footnote{Gracias a esta característica podemos saber el valor de $p$(respectivamente $q$)a partir de su , es decir, $q$(respectivamente $p$)}
+ \item[$\circ$]La probabilidad de obtener un resultado $A$ en cada prueba es $p$ y la de obtener un resultado no $A$ es $q$, siendo $p+q=1$. \footnote{Gracias a esta característica podemos saber el valor de $p$(respectivamente $q$)a partir de su homólogo , es decir, $q$(respectivamente $p$)}
  \item[$\circ$]Las probabilidades $p$ y $q$ son constantes en todas las pruebas, por tanto, las pruebas son independientes (Si se trata de un proceso de ''extracción'',este se llevara a cabo con devolución del sujeto extraído)
 \end{itemize}
 \subsection{Función de probabilidad de la distribución geométrica}
@@ -113,11 +113,12 @@ Luego la función de Probabilidad nos quedaría como queríamos ver:
 \begin{equation}
 P(x)= q^{n-1} \cdot p
 \end{equation}
-Algunos autores consideran la aleatorización como ''número de pruebas anteriores al primer éxito''. De esta manera el conseguir el éxito a la primera sería $X=0$. En la siguiente representación gráfica de la función de probabilidad (Veáse la gráfica \ref{imagen})de la geométrica puede apreciarse este tipo de aleatorización.
+Algunos autores consideran la aleatorización como ''número de pruebas anteriores al primer éxito''. De esta manera el conseguir el éxito a la primera sería $X=0$. En la siguiente representación gráfica de la función de probabilidad (Veáse la Figura \ref{imagen})de la geométrica puede apreciarse este tipo de aleatorización.
 
-\begin{figure}[!th]
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=5cm]{images/grafica1.png}
+\includegraphics[width=6cm]{images/grafica1.png}
+\centering
 \caption{Función de probabilidad geométrica con $p= 0.3$}
 \label{imagen}
 \end{center}
@@ -135,7 +136,8 @@ de donde: $F(x)=1-q^x$.
  las gráfica análoga a la anterior:
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=5cm]{images/grafica2.png}
+\includegraphics[width=6cm]{images/grafica2.png}
+\centering
 \caption{Distribución geométrica con $p= 0.3$}
 \label{imagen1}
 \end{center}
@@ -147,20 +149,20 @@ de donde: $F(x)=1-q^x$.
  \item[$\circ$]\bf{La varianza:}$var(X)=var(Y)=\frac{1-p}{p^2}$
  \item[$\circ$]\bf{Las funciones generatrices:}
  \begin{center}
- $G_X(s)=\frac{sp}{1-s(1-p)}$ o $G_Y(s)=\frac{p}{1-s(1-p)}$, $\; \vert s \vert < (1-p)^{-1}$
+ $G_X(s)=\frac{s\cdot p}{1-s(1-p)}$ \hspace{1cm} \text{y} \hspace{1cm} $G_Y(s)=\frac{p}{1-s(1-p)}$, $\; \vert s \vert < (1-p)^{-1}$
  \end{center}
- \item[$\circ$]\textbf{La moda:} es el valor de la variable que tiene asociada mayor probabilidad. Es fácil comprobar (Véase la gráfica \ref{imagen}) que:
+ \item[$\circ$]\textbf{La moda:} es el valor de la variable que tiene asociada mayor probabilidad. Es fácil comprobar (Véase la Figura \ref{imagen}) que:
  \[P(x_i)\leq P(x=1) \forall x_i\]
  \item[$\circ$]\bf{La mediana $M_e$:} será aquel valor de la variable en el cual la función de distribución toma el valor 0.5. Así: $F(M_e)=1-q^M=\frac{1}{2}\Rightarrow q^M = \frac{1}{2}$
 ,por lo que, $M_e \cdot ln(q)=ln(1)-ln(2)=-ln(2)\longrightarrow M_e=\frac{-ln(2)}{ln(q)}$
  \item[$\circ$]\bf{Función de Momentos (F.G.M):}
- \begin{equation}\label{per}
+ \begin{equation*}\label{per}
    \begin{split}
-     \varphi(t) & =E[e^{tx}]=\sum_{x=1}^{\infty} {e^{tx} \cdot p \cdot q^{x-1}} =\frac{p}{q}\sum_{x=1}^{\infty} {(e^{t} \cdot q)}^x=\lim\limits_{x \rightarrow -\infty}\frac{p}{q}\left( qe^t + (qe^t)^2+...+(qe^t)^n\right)\\
-                          & =\lim\limits_{x \rightarrow -\infty}\frac{p}{q} \frac{(qe^t)^{n+1}-qe^t}{qe^t-1} ==\frac{p}{q} \frac{(qe^t}{1-qe^t} =p \frac{e^t}{1-qe^t} ==\frac{p}{e^{-t}-q}\\
+     \varphi(t) & =E[e^{tx}]=\sum_{x=1}^{\infty} {e^{tx} \cdot p \cdot q^{x-1}} =\frac{p}{q}\sum_{x=1}^{\infty} {(e^{t} \cdot q)}^x=\lim\limits_{x \rightarrow -\infty}\frac{p}{q}\left( qe^t + (qe^t)^2+...+(qe^t)^x\right)\\
+                          & =\lim\limits_{x \rightarrow -\infty}\frac{p}{q} \left[\frac{\cancelto{0}{(qe^t)^{x+1}}-qe^t}{qe^t-1}\right] =\frac{p}{\cancel{q}} \left[\frac{\cancel{q}e^t}{1-qe^t}\right] =p \left[\frac{e^t}{1-qe^t}\right] =\frac{p}{e^{-t}-q}\\
                           & =p(e^{-t}-q)^{-1}
    \end{split}
- \end{equation}
+ \end{equation*}
 
  Por lo que queda establecida que la F.G.M. tiene la expresión:
  \begin{center}
@@ -168,18 +170,24 @@ de donde: $F(x)=1-q^x$.
  \end{center}
 \end{itemize}
 Siguiendo el ejemplo de las figuras anteriores obtenemos los siguientes resultados:
-\begin{table}[!ht]
+\begin{table}[H]
 \begin{center}
+\scalebox{0.9}{
 \begin{tabular}{|c|c|c|}
 \hline
- & Fórmula & Valor para $P=0.3$ \\ \hline
-Media & $E(Y)=\frac{1-p}{p}$ & $1$ \\ \hline
-Varianza & $var(Y)=\frac{1-p}{p^2}$ &$2$ \\ \hline
-Coeficiente de simetría & $G_Y(s)=\frac{p}{1-s(1-p)}$ & $2.1213203435596$ \\ \hline
+   \rowcolor[RGB]{0,88,147}    & \textbf{Fórmula}              & \textbf{Valor para p=0.3} \\ \hline
+\textbf{Media} & $E(Y)=\frac{1-p}{p}$ & 1\\ 
+\textbf{Varianza} & $var(Y)=\frac{1-p}{p^2}$ &2\\ 
+\textbf{Coeficiente de simetría} & $G_Y(s)=\frac{p}{1-s(1-p)}$ & 2.1213203435596 \\ 
+\hline
 \end{tabular}
+}
 \end{center}
 \caption{Propiedades geométricas}
 \label{tabla}
 \end{table}
+%------------------------------------------------------------------------------
+%\input{tables/datos.tex}
+%------------------------------------------------------------------------------
 
 
