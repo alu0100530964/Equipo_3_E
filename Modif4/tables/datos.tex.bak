@@ -1,0 +1,15 @@
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+   \rowcolor[RGB]{0,88,147}    & \textbf{Formula}              & \textbf{Valor para p=0.3} \\ \hline
+\textbf{Media} & $E(Y)=\frac{1-p}{p}$ & 1\\
+\textbf{Varianza} & $var(Y)=\frac{1-p}{p^2}$ &2\\
+\textbf{Coeficiente de simetría} & $G_Y(s)=\frac{p}{1-s(1-p)}$ & 2.1213203435596 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Propiedades geométricas}
+\label{tabla}
+\end{table}
+

@@ -1,0 +1,13 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: memte.aux
+The style file: plain.bst
+Database file #1: bib/references.bib
+Repeated entry---line 41 of file bib/references.bib
+ : @book{Probabilidades
+ :                     ,
+I'm skipping whatever remains of this entry
+Too many commas in name 1 of "Salazar Gonz\'alez, Juan J\'ose,L\'opez Yurta, Marta" for entry Probabilidades
+while executing---line 1049 of file plain.bst
+Warning--empty school in Leo:96
+Too many commas in name 1 of "Salazar Gonz\'alez, Juan J\'ose,L\'opez Yurta, Marta" for entry Probabilidades
+while executing---line 1090 of file plain.bst
+(There were 3 error messages)
