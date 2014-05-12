@@ -1,0 +1,27 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Motivaci\'on y objetivos}{2}
+\contentsline {section}{\numberline {1.1}Motivaci\'on}{2}
+\contentsline {subsection}{\numberline {1.1.1}Problemas resueltos}{2}
+\contentsline {subsubsection}{Problema 1: N\'umero de hijos}{2}
+\contentsline {subsubsection}{Problema 2: Tantos en baloncesto}{3}
+\contentsline {subsubsection}{Problema 3: Dados}{4}
+\contentsline {subsubsection}{Problema 4: Reacci\'on frente a un medicamento}{5}
+\contentsline {chapter}{\numberline {2}Fundamentos te\'oricos}{6}
+\contentsline {section}{\numberline {2.1}Conocimientos previos}{6}
+\contentsline {subsection}{\numberline {2.1.1}Funci\'on de probabilidad}{7}
+\contentsline {section}{\numberline {2.2}Distribuci\'on Geom\'etrica}{7}
+\contentsline {subsection}{\numberline {2.2.1}Funci\'on de probabilidad de la distribuci\'on geom\'etrica}{8}
+\contentsline {subsection}{\numberline {2.2.2}Funci\'on de distribuci\'on}{9}
+\contentsline {subsection}{\numberline {2.2.3}Propiedades de la geom\'etrica}{10}
+\contentsline {chapter}{\numberline {3}Procedimiento experimental}{12}
+\contentsline {section}{\numberline {3.1}Descripci\'on de los experimentos}{12}
+\contentsline {section}{\numberline {3.2}Descripci\'on del material}{12}
+\contentsline {section}{\numberline {3.3}Resultados obtenidos:}{14}
+\contentsline {section}{\numberline {3.4}An\'alisis de los resultados}{15}
+\contentsline {chapter}{\numberline {4}Conclusiones}{16}
+\contentsline {chapter}{\numberline {A}Ap\'endice 1: }{17}
+\contentsline {section}{\numberline {A.1}Algoritmo Principal:}{17}
+\contentsline {section}{\numberline {A.2}Algoritmo del Modulo:}{19}
+\contentsline {chapter}{\numberline {B}Ap\'endice 2}{20}
+\contentsline {section}{\numberline {B.1}C\'odigo para generar gr\'aficas}{20}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{20}

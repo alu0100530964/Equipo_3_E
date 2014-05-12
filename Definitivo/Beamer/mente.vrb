@@ -1,0 +1,20 @@
+\frametitle{Código principal}
+\begin{verbatim}
+  elif (respuesta == 2):
+    start=time.time()
+    probabilidad=mod_geo.calcular_geo1(n-1,p)
+    finish=time.time()-start
+    print "La probabilidad P[X< %d] con p= %f es: %f
+    y he tardado %f segundos en calcularlo" %(n,p,probabilidad,finish)
+  else:
+    start=time.time()
+    prob=mod_geo.calcular_geo1(n,p)
+    probabilidad = 1 - prob
+    finish=time.time()-start
+    print "La probabilidad P[X>= %d] con p= %f es: %f
+    y he tardado %f segundos en calcularlo" %(n,p,probabilidad,finish)
+else:
+    print "No podemos hallar la probabilidad"
+\end{verbatim}
+\hyperlink{Liga4}{\beamerreturnbutton{Funciones utilizadas en Python}}
+\hypertarget<2>{Liga3}{}

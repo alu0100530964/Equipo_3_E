@@ -1,0 +1,17 @@
+\begin{table}[!ht]
+\begin{center}
+         \scalebox{0.7}{
+		\begin{tabular}{|c||c|c|c||}
+          \hline
+          % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+          \rowcolor[rgb]{1,0,1} Marca: &  Modelo: & Procesador: & Sistema Operativo: \\ \hline\hline
+          Intel & GenuineIntel & Pentium(R) Dual-Core  CPU      E5300  2.60GHz & Linux-3.2.0-61-generic-i686-with-Ubuntu-12.04-precise\\ \hline
+         Acer & Aspire 5735Z & Pentium(R) Dual-Core  CPU      T3200 2.0 GHz & Windows 7 Profesional 32 bits  \\ \hline
+          Acer & Aspire 5735 & Pentium(R) Dual-Core  CPU      T3200 2.0 GHz & Windows 7 Profesional 32 bits  \\ \hline
+          Acer & Aspire 5735 & Pentium(R) Dual-Core  CPU      T3200 2.0 GHz & Windows 8 Profesional 32 bits  \\ \hline
+        \end{tabular}
+        }
+\end{center}
+        \caption{Versiones de Python:}
+        \label{marca:1}
+\end{table}

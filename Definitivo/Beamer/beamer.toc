@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@sectionintoc {2}{Fundamentos Te\IeC {\'o}ricos}{4}{0}{2}
+\beamer@sectionintoc {3}{Procedimiento experimental}{14}{0}{3}
+\beamer@sectionintoc {4}{Conclusiones}{26}{0}{4}
+\beamer@sectionintoc {5}{C\IeC {\'o}digos implementados en Python}{30}{0}{5}
